@@ -161,3 +161,8 @@ kubectl delete ns monitoring
 ```bash
 eksctl delete cluster --name observability
 ```
+
+## Once you are done, cleanup the cluster
+```
+eksctl delete cluster --name haneesh-cloud --region us-west-1
+```
