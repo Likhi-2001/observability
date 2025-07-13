@@ -96,6 +96,18 @@ eksctl create nodegroup --cluster=observability \
 
 # Update ./kube/config file
 aws eks update-kubeconfig --name observability
+
+
+### CREATE CLSTER
+```
+eksctl create cluster -f eks-cluster-config.yaml
+
+```
+###update kubeconfig to set current cluster context
+```
+aws eks update-kubeconfig --region us-west-1 --name prod-eks-cluster
+
+```
 ```
 
 ### 🧰 Step 2: Install kube-prometheus-stack
